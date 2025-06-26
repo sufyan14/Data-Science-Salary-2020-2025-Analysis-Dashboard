@@ -1,0 +1,2812 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0520.1026                               -->
+<workbook original-version='18.1' source-build='2025.1.2 (20251.25.0520.1026)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='DataScienceSalaries2025' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='DataScience_salaries_2025' inline='true' name='federated.1v0r29i1p88o6o0zuadzt1qojv78' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='DataScience_salaries_2025' name='textscan.10yhd630sv5dq011omswn0nnr8t5'>
+            <connection class='textscan' directory='D:/Work/Data Analyst/ML Project/Datasets' filename='DataScience_salaries_2025.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.10yhd630sv5dq011omswn0nnr8t5' name='DataScience_salaries_2025.csv' table='[DataScience_salaries_2025#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='work_year' ordinal='0' />
+            <column datatype='string' name='experience_level' ordinal='1' />
+            <column datatype='string' name='employment_type' ordinal='2' />
+            <column datatype='string' name='job_title' ordinal='3' />
+            <column datatype='integer' name='salary' ordinal='4' />
+            <column datatype='string' name='salary_currency' ordinal='5' />
+            <column datatype='integer' name='salary_in_usd' ordinal='6' />
+            <column datatype='string' name='employee_residence' ordinal='7' />
+            <column datatype='integer' name='remote_ratio' ordinal='8' />
+            <column datatype='string' name='company_location' ordinal='9' />
+            <column datatype='string' name='company_size' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[DataScience_salaries_2025.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>work_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[work_year]</local-name>
+            <parent-name>[DataScience_salaries_2025.csv]</parent-name>
+            <remote-alias>work_year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[DataScience_salaries_2025.csv_976CEB4EC8BC4C398920471D8DFB577B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>experience_level</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[experience_level]</local-name>
+            <parent-name>[DataScience_salaries_2025.csv]</parent-name>
+            <remote-alias>experience_level</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[DataScience_salaries_2025.csv_976CEB4EC8BC4C398920471D8DFB577B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>employment_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[employment_type]</local-name>
+            <parent-name>[DataScience_salaries_2025.csv]</parent-name>
+            <remote-alias>employment_type</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[DataScience_salaries_2025.csv_976CEB4EC8BC4C398920471D8DFB577B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>job_title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[job_title]</local-name>
+            <parent-name>[DataScience_salaries_2025.csv]</parent-name>
+            <remote-alias>job_title</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[DataScience_salaries_2025.csv_976CEB4EC8BC4C398920471D8DFB577B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>salary</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[salary]</local-name>
+            <parent-name>[DataScience_salaries_2025.csv]</parent-name>
+            <remote-alias>salary</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[DataScience_salaries_2025.csv_976CEB4EC8BC4C398920471D8DFB577B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>salary_currency</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[salary_currency]</local-name>
+            <parent-name>[DataScience_salaries_2025.csv]</parent-name>
+            <remote-alias>salary_currency</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[DataScience_salaries_2025.csv_976CEB4EC8BC4C398920471D8DFB577B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>salary_in_usd</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[salary_in_usd]</local-name>
+            <parent-name>[DataScience_salaries_2025.csv]</parent-name>
+            <remote-alias>salary_in_usd</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[DataScience_salaries_2025.csv_976CEB4EC8BC4C398920471D8DFB577B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>employee_residence</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[employee_residence]</local-name>
+            <parent-name>[DataScience_salaries_2025.csv]</parent-name>
+            <remote-alias>employee_residence</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[DataScience_salaries_2025.csv_976CEB4EC8BC4C398920471D8DFB577B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>remote_ratio</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[remote_ratio]</local-name>
+            <parent-name>[DataScience_salaries_2025.csv]</parent-name>
+            <remote-alias>remote_ratio</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[DataScience_salaries_2025.csv_976CEB4EC8BC4C398920471D8DFB577B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>company_location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[company_location]</local-name>
+            <parent-name>[DataScience_salaries_2025.csv]</parent-name>
+            <remote-alias>company_location</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[DataScience_salaries_2025.csv_976CEB4EC8BC4C398920471D8DFB577B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>company_size</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[company_size]</local-name>
+            <parent-name>[DataScience_salaries_2025.csv]</parent-name>
+            <remote-alias>company_size</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[DataScience_salaries_2025.csv_976CEB4EC8BC4C398920471D8DFB577B]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='DataScience_salaries_2025.csv' datatype='table' name='[__tableau_internal_object_id__].[DataScience_salaries_2025.csv_976CEB4EC8BC4C398920471D8DFB577B]' role='measure' type='quantitative' />
+      <column caption='Company Location' datatype='string' name='[company_location]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+      <column caption='Company Size' datatype='string' name='[company_size]' role='dimension' type='nominal' />
+      <column caption='Employee Residence' datatype='string' name='[employee_residence]' role='dimension' type='nominal' />
+      <column caption='Employment Type' datatype='string' name='[employment_type]' role='dimension' type='nominal' />
+      <column caption='Experience Level' datatype='string' name='[experience_level]' role='dimension' type='nominal' />
+      <column caption='Job Title' datatype='string' name='[job_title]' role='dimension' type='nominal' />
+      <column caption='Remote Ratio' datatype='integer' name='[remote_ratio]' role='measure' type='quantitative' />
+      <column caption='Salary' datatype='integer' name='[salary]' role='measure' type='quantitative' />
+      <column caption='Salary Currency' datatype='string' name='[salary_currency]' role='dimension' type='nominal' />
+      <column caption='Salary In Usd' datatype='integer' name='[salary_in_usd]' role='measure' type='quantitative' />
+      <column caption='Work Year' datatype='integer' name='[work_year]' role='dimension' type='quantitative' />
+      <column-instance column='[company_size]' derivation='None' name='[none:company_size:ok]' pivot='key' type='nominal' />
+      <column-instance column='[experience_level]' derivation='None' name='[none:experience_level:nk]' pivot='key' type='nominal' />
+      <column-instance column='[job_title]' derivation='None' name='[none:job_title:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/muham/AppData/Local/Temp/TableauTemp/#TableauTemp_00aqnw30ltnc0c1bwbje40a94jqn.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/03/2025 05:54:22 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>work_year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[work_year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>work_year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>DataScience_salaries_2025.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[DataScience_salaries_2025.csv_976CEB4EC8BC4C398920471D8DFB577B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>experience_level</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[experience_level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>experience_level</remote-alias>
+              <ordinal>1</ordinal>
+              <family>DataScience_salaries_2025.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[DataScience_salaries_2025.csv_976CEB4EC8BC4C398920471D8DFB577B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>employment_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[employment_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>employment_type</remote-alias>
+              <ordinal>2</ordinal>
+              <family>DataScience_salaries_2025.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[DataScience_salaries_2025.csv_976CEB4EC8BC4C398920471D8DFB577B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>job_title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[job_title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>job_title</remote-alias>
+              <ordinal>3</ordinal>
+              <family>DataScience_salaries_2025.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>471</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[DataScience_salaries_2025.csv_976CEB4EC8BC4C398920471D8DFB577B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>salary</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[salary]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>salary</remote-alias>
+              <ordinal>4</ordinal>
+              <family>DataScience_salaries_2025.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5308</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[DataScience_salaries_2025.csv_976CEB4EC8BC4C398920471D8DFB577B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>salary_currency</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[salary_currency]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>salary_currency</remote-alias>
+              <ordinal>5</ordinal>
+              <family>DataScience_salaries_2025.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[DataScience_salaries_2025.csv_976CEB4EC8BC4C398920471D8DFB577B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>salary_in_usd</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[salary_in_usd]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>salary_in_usd</remote-alias>
+              <ordinal>6</ordinal>
+              <family>DataScience_salaries_2025.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5523</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[DataScience_salaries_2025.csv_976CEB4EC8BC4C398920471D8DFB577B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>employee_residence</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[employee_residence]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>employee_residence</remote-alias>
+              <ordinal>7</ordinal>
+              <family>DataScience_salaries_2025.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>174</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[DataScience_salaries_2025.csv_976CEB4EC8BC4C398920471D8DFB577B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>remote_ratio</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[remote_ratio]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>remote_ratio</remote-alias>
+              <ordinal>8</ordinal>
+              <family>DataScience_salaries_2025.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[DataScience_salaries_2025.csv_976CEB4EC8BC4C398920471D8DFB577B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>company_location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[company_location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>company_location</remote-alias>
+              <ordinal>9</ordinal>
+              <family>DataScience_salaries_2025.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>174</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[DataScience_salaries_2025.csv_976CEB4EC8BC4C398920471D8DFB577B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>company_size</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[company_size]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>company_size</remote-alias>
+              <ordinal>10</ordinal>
+              <family>DataScience_salaries_2025.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[DataScience_salaries_2025.csv_976CEB4EC8BC4C398920471D8DFB577B]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:job_title:nk]' palette='blue_teal_10_0' type='palette'>
+            <map to='#2c5985'>
+              <bucket>&quot;Software Engineer&quot;</bucket>
+            </map>
+            <map to='#2f6891'>
+              <bucket>&quot;Research Scientist&quot;</bucket>
+            </map>
+            <map to='#33789d'>
+              <bucket>&quot;Manager&quot;</bucket>
+            </map>
+            <map to='#3589a9'>
+              <bucket>&quot;Machine Learning Engineer&quot;</bucket>
+            </map>
+            <map to='#3e99b4'>
+              <bucket>&quot;Engineer&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;AI Data Scientist&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Analytics Lead&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;BI Data Analyst&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Business Intelligence Engineer&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Copywriter&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Data Governance Analyst&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Data Management Lead&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Data Quality Manager&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Database Administrator&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Financial Data Analyst&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Lead Engineer&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Master Data Specialist&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Power BI Administrator&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Product Owner&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Sales Development Representative&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Statistician&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;AI Software Engineer&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Autonomous Vehicle Technician&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Business Development Manager&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Compliance Data Analyst&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Data Analytics Team Lead&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Data Integrator&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Data Pipeline Engineer&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Data Strategy Lead&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Encounter Data Management Professional&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Java Developer&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Machine Learning Quality Engineer&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;MLOps Engineer&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Principal Machine Learning Engineer&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Research Data Manager&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Solution Engineer&quot;</bucket>
+            </map>
+            <map to='#53a9bd'>
+              <bucket>&quot;Data Scientist&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Application Developer&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Backend Engineer&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Business Intelligence Analyst&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Computer Vision Software Engineer&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Data Developer&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Data Management Analyst&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Data Product Owner&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Data Visualization Developer&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;ETL Developer&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Lead Data Analyst&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Machine Learning Software Engineer&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Platform Engineer&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Product Analyst&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Robotics Engineer&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Staff Data Scientist&quot;</bucket>
+            </map>
+            <map to='#6eb8c5'>
+              <bucket>&quot;Data Engineer&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;AI Engineering Manager&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;AI Product Manager&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Applied Data Scientist&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Big Data Analyst&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Chatbot Developer&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Data Governance Manager&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Data Modeler&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Data Reporting Specialist&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Deep Learning Engineer&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Fullstack Engineer&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Machine Learning Model Engineer&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Marketing Data Analyst&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Power BI Expert&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;QA Engineer&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Security Researcher&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Tech Lead&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;AI Developer&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Analytics Specialist&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;BI Data Engineer&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Business Intelligence Lead&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;CRM Data Analyst&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Data Governance Architect&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Data Management Manager&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Data Quality Specialist&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Databricks Engineer&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Frontend Engineer&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Lead Machine Learning Engineer&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Manager Data Management&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Power BI Architect&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Product Specialist&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;SAS Developer&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;System Engineer&quot;</bucket>
+            </map>
+            <map to='#87c6cc'>
+              <bucket>&quot;Data Analyst&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Admin &amp; Data Analyst&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Analytics Analyst&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Backend Software Engineer&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Business Intelligence Consultant&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Consultant&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Data DevOps Engineer&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Data Management Associate&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Data Quality Analyst&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Data Visualization Engineer&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;ETL Engineer&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Lead Data Engineer&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Machine Learning Specialist&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Postdoctoral Fellow&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Product Data Analyst&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Robotics Software Engineer&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Staff Machine Learning Engineer&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;AI Scientist&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Artificial Intelligence Engineer&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Business Analyst&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Cloud Developer&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Data Analytics Manager&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Data Integration Engineer&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Data Operations Manager&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Data Specialist&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Director of Machine Learning&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Infrastructure Engineer&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Machine Learning Performance Engineer&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Member of Technical Staff&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Principal Data Engineer&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Research Assistant&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Account Executive&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;AI Solution Architect&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;AWS Data Architect&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Business Development Representative&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Computational Biologist&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Data and Reporting Analyst&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Data Integrity Analyst&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Data Platform Engineer&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Data Strategy Manager&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Head of Business Intelligence&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Lead AI Engineer&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Machine Learning Research Engineer&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;NLP Engineer&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Principal Researcher&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Research Engineer&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Solutions Architect&quot;</bucket>
+            </map>
+            <map to='#a0d4d1'>
+              <bucket>&quot;Applied Scientist&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;AI Research Scientist&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;BI Engineer&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Bioinformatician&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Cloud Database Administrator&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Data Analytics Engineer&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Data Integration Coordinator&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Data Operations Engineer&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Data Scientist Lead&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;DevOps Engineer&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Head of Data&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Master Data Management&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Principal Data Analyst&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Quantitative Researcher&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Software Developer&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Technology Integrator&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;AI Architect&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Analytics Engineer&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Bear Robotics&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Business Intelligence Data Analyst&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Consultant Data Engineer&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Data Governance Specialist&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Data Management Consultant&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Data Quality Engineer&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Data Visualization Expert&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Executive&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Lead Data Management&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Machine Learning Tech Lead&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Postdoctoral Researcher&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Product Designer&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Safety Data Management Specialist&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Stage&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;AI Product Owner&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Applied Machine Learning Engineer&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Big Data Architect&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Clinical Data Operator&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Data Analytics Associate&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Data Operations&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Data Science Tech Lead&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Deep Learning Researcher&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;GenAI Architect&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Machine Learning Infrastructure Engineer&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Marketing Data Engineer&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Power BI Specialist&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Quantitative Analyst&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Site Reliability Engineer&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Technical Lead&quot;</bucket>
+            </map>
+            <map to='#bce4d8'>
+              <bucket>&quot;Analyst&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;AI Governance Lead&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;AI Programmer&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Applied Machine Learning Scientist&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Big Data Developer&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Cloud Data Architect&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Data Analytics Consultant&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Data Infrastructure Engineer&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Data Operations Analyst&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Developer&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Head of AI&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Machine Learning Lead&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Marketing Data Scientist&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Pricing Analyst&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Quantitative Developer&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Software Architect&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Technical Specialist&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;AI Researcher&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Architect&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Bioinformatics Scientist&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Cloud Database Engineer&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Data Analytics Lead&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Data Integration Developer&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Data Operations Lead&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Data Scientist Manager&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Director of Business Intelligence&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Head of Machine Learning&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Machine Learning Modeler&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Principal Data Architect&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Research Analyst&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Software Development Engineer&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;AI Software Development Engineer&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Associate&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Business Data Analyst&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Cloud Engineer&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Data Analytics Specialist&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Data Integration Specialist&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Data Operations Specialist&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Data Strategist&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Elasticsearch Administrator&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Insight Analyst&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Machine Learning Platform Engineer&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;ML Infrastructure Engineer&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Principal Data Scientist&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Research Associate&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;AI Lead&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;BI Developer&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Business Intelligence Manager&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Customer Success Manager&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Data Governance Engineer&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Data Management Specialist&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Data Reporter&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;DataOps Engineer&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Full Stack Developer&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Machine Learning Architect&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Marketing Analyst&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Power BI Consultant&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Prompt Engineer&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Scala Spark Developer&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Systems Engineer&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;AI Data Engineer&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Analytics Engineering Manager&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;BI Analyst&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Business Intelligence Developer&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Controls Engineer&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Data Governance&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Data Management Coordinator&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Data Quality Lead&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Data Visualization Specialist&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Finance Data Analyst&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Lead Data Scientist&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Machine Vision Engineer&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Power BI&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Product Manager&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Sales Data Analyst&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Statistical Programmer&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;AI Specialist&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Azure Data Engineer&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Business Insights Manager&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Computational Scientist&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Data and Reporting Professional&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Data Integrity Specialist&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Data Product Analyst&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Data Team Lead&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Engineering Manager&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Lead Analyst&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Machine Learning Researcher&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;People Data Analyst&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Principal Software Architect&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Solution Architect&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Solutions Engineer&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;AI Research Engineer&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Applied Research Scientist&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Big Data Engineer&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Cloud Data Engineer&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Data Analytics Developer&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Data Integration Analyst&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Data Operations Associate&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Data Scientist Associate&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Developer Advocate&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Machine Learning Manager&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Marketing Science Partner&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Principal Application Delivery Consultant&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Quantitative Research Analyst&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Software Data Engineer&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Technical Writer&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;AI Engineer&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;AI Machine Learning Engineer&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Applied AI ML Lead&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Business Intelligence Specialist&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Data Analyst Lead&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Data Governance Lead&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Data Manager&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Data Reporting Analyst&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Decision Scientist&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Full Stack Engineer&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Machine Learning Developer&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Marketing Analytics Manager&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Power BI Developer&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Python Developer&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Security Engineer&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Tableau Developer&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Actuarial Analyst&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Algorithm Developer&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Backend Developer&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Business Intelligence&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Computer Vision Engineer&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Data Architect&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Data Lead&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Data Product Manager&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Data Visualization Analyst&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Enterprise Account Executive&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Lead Data Analysis&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Machine Learning Scientist&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Platform Data Engineer&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Principal Statistical Programmer&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Risk Analyst&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Staff Data Analyst&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:experience_level:nk]' palette='blue_teal_10_0' type='palette'>
+            <map to='#2c5985'>
+              <bucket>&quot;SE&quot;</bucket>
+            </map>
+            <map to='#3589a9'>
+              <bucket>&quot;MI&quot;</bucket>
+            </map>
+            <map to='#6eb8c5'>
+              <bucket>&quot;EX&quot;</bucket>
+            </map>
+            <map to='#bce4d8'>
+              <bucket>&quot;EN&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:company_size:ok]' palette='blue_teal_10_0' type='palette'>
+            <map to='#2c5985'>
+              <bucket>&quot;S&quot;</bucket>
+            </map>
+            <map to='#45a2b9'>
+              <bucket>&quot;M&quot;</bucket>
+            </map>
+            <map to='#bce4d8'>
+              <bucket>&quot;L&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='DataScience_salaries_2025.csv' id='DataScience_salaries_2025.csv_976CEB4EC8BC4C398920471D8DFB577B'>
+            <properties context=''>
+              <relation connection='textscan.10yhd630sv5dq011omswn0nnr8t5' name='DataScience_salaries_2025.csv' table='[DataScience_salaries_2025#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='work_year' ordinal='0' />
+                  <column datatype='string' name='experience_level' ordinal='1' />
+                  <column datatype='string' name='employment_type' ordinal='2' />
+                  <column datatype='string' name='job_title' ordinal='3' />
+                  <column datatype='integer' name='salary' ordinal='4' />
+                  <column datatype='string' name='salary_currency' ordinal='5' />
+                  <column datatype='integer' name='salary_in_usd' ordinal='6' />
+                  <column datatype='string' name='employee_residence' ordinal='7' />
+                  <column datatype='integer' name='remote_ratio' ordinal='8' />
+                  <column datatype='string' name='company_location' ordinal='9' />
+                  <column datatype='string' name='company_size' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontsize='18'>Top 10 Earning Job Titles</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DataScience_salaries_2025' name='federated.1v0r29i1p88o6o0zuadzt1qojv78' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1v0r29i1p88o6o0zuadzt1qojv78'>
+            <column caption='Job Title' datatype='string' name='[job_title]' role='dimension' type='nominal' />
+            <column-instance column='[job_title]' derivation='None' name='[none:job_title:nk]' pivot='key' type='nominal' />
+            <column caption='Salary' datatype='integer' name='[salary]' role='measure' type='quantitative' />
+            <column-instance column='[salary]' derivation='Sum' name='[sum:salary:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:job_title:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([salary])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:job_title:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:job_title:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#666666' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' value='Leelawadee' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#666666' />
+            <format attr='font-family' value='Leelawadee' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-size' value='15' />
+            <format attr='font-family' value='Leelawadee' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='font-family' value='Leelawadee' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:job_title:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1v0r29i1p88o6o0zuadzt1qojv78].[sum:salary:qk]</rows>
+        <cols>[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:job_title:nk]</cols>
+      </table>
+      <simple-id uuid='{0FD8898A-2C86-4BF8-A7DC-B4CD1E07E25E}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontsize='18'>Salaries by Experience Level</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DataScience_salaries_2025' name='federated.1v0r29i1p88o6o0zuadzt1qojv78' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1v0r29i1p88o6o0zuadzt1qojv78'>
+            <column caption='Experience Level' datatype='string' name='[experience_level]' role='dimension' type='nominal' />
+            <column-instance column='[experience_level]' derivation='None' name='[none:experience_level:nk]' pivot='key' type='nominal' />
+            <column caption='Salary' datatype='integer' name='[salary]' role='measure' type='quantitative' />
+            <column-instance column='[salary]' derivation='Sum' name='[sum:salary:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Leelawadee' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-family' value='Leelawadee' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='font-family' value='Leelawadee' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:experience_level:nk]' />
+              <size column='[federated.1v0r29i1p88o6o0zuadzt1qojv78].[sum:salary:qk]' />
+              <text column='[federated.1v0r29i1p88o6o0zuadzt1qojv78].[sum:salary:qk]' />
+              <text column='[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:experience_level:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#757575'>Experience Level:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:experience_level:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Salary:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1v0r29i1p88o6o0zuadzt1qojv78].[sum:salary:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run>Æ &#10;</run>
+                <run><![CDATA[<[federated.1v0r29i1p88o6o0zuadzt1qojv78].[sum:salary:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run><![CDATA[<[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:experience_level:nk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='10' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='size' value='1' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <mark-labels>
+          <mark-label id='0'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:experience_level:nk]</field>
+                  <field>[federated.1v0r29i1p88o6o0zuadzt1qojv78].[sum:salary:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;EN&quot;</value>
+                <value>974881607</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='0' y='38' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{5D57DC98-6B37-4445-BD51-2703E2420F11}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontsize='18'>Remote Ratio by Job Title</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DataScience_salaries_2025' name='federated.1v0r29i1p88o6o0zuadzt1qojv78' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1v0r29i1p88o6o0zuadzt1qojv78'>
+            <column-instance column='[remote_ratio]' derivation='Count' name='[cnt:remote_ratio:qk]' pivot='key' type='quantitative' />
+            <column caption='Job Title' datatype='string' name='[job_title]' role='dimension' type='nominal' />
+            <column-instance column='[job_title]' derivation='None' name='[none:job_title:nk]' pivot='key' type='nominal' />
+            <column caption='Remote Ratio' datatype='integer' name='[remote_ratio]' role='measure' type='quantitative' />
+            <column-instance column='[remote_ratio]' derivation='Sum' name='[sum:remote_ratio:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='762' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1v0r29i1p88o6o0zuadzt1qojv78].[cnt:remote_ratio:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='size-bar' field='[federated.1v0r29i1p88o6o0zuadzt1qojv78].[sum:remote_ratio:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.1v0r29i1p88o6o0zuadzt1qojv78].[cnt:remote_ratio:qk]' palette='blue_teal_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Leelawadee' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-family' value='Leelawadee' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='font-family' value='Leelawadee' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1v0r29i1p88o6o0zuadzt1qojv78].[cnt:remote_ratio:qk]' />
+              <color column='[federated.1v0r29i1p88o6o0zuadzt1qojv78].[cnt:remote_ratio:qk]' />
+              <text column='[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:job_title:nk]' />
+              <text column='[federated.1v0r29i1p88o6o0zuadzt1qojv78].[sum:remote_ratio:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='10' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <mark-labels>
+          <mark-label id='0' label-state='off'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1v0r29i1p88o6o0zuadzt1qojv78].[cnt:remote_ratio:qk]</field>
+                  <field>[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:job_title:nk]</field>
+                  <field>[federated.1v0r29i1p88o6o0zuadzt1qojv78].[sum:remote_ratio:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>298</value>
+                <value>&quot;Site Reliability Engineer&quot;</value>
+                <value>6000</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{917EEF86-E361-4B55-B651-D4DB8A52681C}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontsize='18'>Salary Trend by Company Size</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DataScience_salaries_2025' name='federated.1v0r29i1p88o6o0zuadzt1qojv78' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1v0r29i1p88o6o0zuadzt1qojv78'>
+            <column caption='Company Size' datatype='string' name='[company_size]' role='dimension' type='nominal' />
+            <column caption='Employment Type' datatype='string' name='[employment_type]' role='dimension' type='nominal' />
+            <column-instance column='[company_size]' derivation='None' name='[none:company_size:ok]' pivot='key' type='nominal' />
+            <column-instance column='[employment_type]' derivation='None' name='[none:employment_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[work_year]' derivation='None' name='[none:work_year:qk]' pivot='key' type='quantitative' />
+            <column caption='Salary' datatype='integer' name='[salary]' role='measure' type='quantitative' />
+            <column-instance column='[salary]' derivation='Sum' name='[sum:salary:qk]' pivot='key' type='quantitative' />
+            <column caption='Work Year' datatype='integer' name='[work_year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:employment_type:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:employment_type:nk]' member='&quot;CT&quot;' />
+              <groupfilter function='member' level='[none:employment_type:nk]' member='&quot;FT&quot;' />
+              <groupfilter function='member' level='[none:employment_type:nk]' member='&quot;PT&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:employment_type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Leelawadee' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-family' value='Leelawadee' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='font-family' value='Leelawadee' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:company_size:ok]' />
+              <text column='[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:company_size:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-size' value='11' />
+                <format attr='font-weight' value='bold' />
+                <format attr='color' value='#000000' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1v0r29i1p88o6o0zuadzt1qojv78].[sum:salary:qk]</rows>
+        <cols>[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:work_year:qk]</cols>
+      </table>
+      <simple-id uuid='{36DA4FAA-E5E7-460D-898D-BA8882070304}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#1b1b1b' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98130' id='8' param='horz' type-v2='layout-flow' w='99064' x='468' y='935'>
+            <zone h='98130' id='6' type-v2='layout-basic' w='89702' x='468' y='935'>
+              <zone forceUpdate='true' h='6074' id='3' type-v2='text' w='89702' x='468' y='935'>
+                <formatted-text>
+                  <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Arial' fontsize='24'>Data Science Salary Analysis</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='46028' id='5' name='Sheet 1' w='56524' x='468' y='7009'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='46028' id='10' name='Sheet 2' w='33178' x='56992' y='7009'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='46028' id='14' name='Sheet 3' w='44851' x='468' y='53037'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='46028' id='16' name='Sheet 4' w='44851' x='45319' y='53037'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98130' id='7' is-fixed='true' param='vert' type-v2='layout-flow' w='9362' x='90170' y='935'>
+              <zone h='26169' id='9' name='Sheet 1' pane-specification-id='0' param='[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:job_title:nk]' type-v2='color' w='9362' x='90170' y='935'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='12150' id='11' name='Sheet 2' pane-specification-id='0' param='[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:experience_level:nk]' type-v2='color' w='9362' x='90170' y='27104'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5141' id='12' name='Sheet 2' pane-specification-id='0' param='[federated.1v0r29i1p88o6o0zuadzt1qojv78].[sum:salary:qk]' type-v2='size' w='9362' x='90170' y='39254'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7127' id='15' name='Sheet 3' pane-specification-id='0' param='[federated.1v0r29i1p88o6o0zuadzt1qojv78].[cnt:remote_ratio:qk]' type-v2='color' w='9362' x='90170' y='44395'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='9814' id='17' name='Sheet 4' pane-specification-id='0' param='[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:company_size:ok]' type-v2='color' w='9362' x='90170' y='51522'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5842' id='13' name='Sheet 2' param='[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:experience_level:nk]' type-v2='highlighter' w='9362' x='90170' y='61336'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1650' minheight='1650' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='29' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98130' id='28' param='vert' type-v2='layout-flow' w='99064' x='468' y='935'>
+                <zone forceUpdate='true' h='6074' id='3' type-v2='text' w='89702' x='468' y='935'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Arial' fontsize='24'>Data Science Salary Analysis</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46028' id='5' is-fixed='true' name='Sheet 1' w='56524' x='468' y='7009'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='26169' id='9' name='Sheet 1' pane-specification-id='0' param='[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:job_title:nk]' type-v2='color' w='9362' x='90170' y='935'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5842' id='13' name='Sheet 2' param='[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:experience_level:nk]' type-v2='highlighter' w='9362' x='90170' y='61336'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46028' id='10' is-fixed='true' name='Sheet 2' w='33178' x='56992' y='7009'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='12150' id='11' name='Sheet 2' pane-specification-id='0' param='[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:experience_level:nk]' type-v2='color' w='9362' x='90170' y='27104'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5141' id='12' name='Sheet 2' pane-specification-id='0' param='[federated.1v0r29i1p88o6o0zuadzt1qojv78].[sum:salary:qk]' type-v2='size' w='9362' x='90170' y='39254'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46028' id='14' is-fixed='true' name='Sheet 3' w='44851' x='468' y='53037'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7127' id='15' name='Sheet 3' pane-specification-id='0' param='[federated.1v0r29i1p88o6o0zuadzt1qojv78].[cnt:remote_ratio:qk]' type-v2='color' w='9362' x='90170' y='44395'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46028' id='16' is-fixed='true' name='Sheet 4' w='44851' x='45319' y='53037'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9814' id='17' name='Sheet 4' pane-specification-id='0' param='[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:company_size:ok]' type-v2='color' w='9362' x='90170' y='51522'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{83A4AA30-28F7-49DB-9D17-ECB78154743D}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:job_title:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:experience_level:nk]</field>
+            <field>[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:job_title:nk]</field>
+            <field>[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:work_year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BF0B54ED-AB8D-43AB-9201-B0B1BA787E91}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:experience_level:nk]' type='color' />
+            <card param='[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:experience_level:nk]' type='highlighter' />
+            <card pane-specification-id='0' param='[federated.1v0r29i1p88o6o0zuadzt1qojv78].[sum:salary:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:company_location:nk]</field>
+            <field>[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:employee_residence:nk]</field>
+            <field>[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:employment_type:nk]</field>
+            <field>[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:experience_level:nk]</field>
+            <field>[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:job_title:nk]</field>
+            <field>[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:work_year:qk]</field>
+            <field>[federated.1v0r29i1p88o6o0zuadzt1qojv78].[sum:salary:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3FDC6FDD-1545-4716-82C9-263E76A7CA08}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1v0r29i1p88o6o0zuadzt1qojv78].[cnt:remote_ratio:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1v0r29i1p88o6o0zuadzt1qojv78].[cnt:remote_ratio:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{99DD7DC7-0AC9-4D73-9FEB-8402332D0E14}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:company_size:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:company_location:nk]</field>
+            <field>[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:company_size:nk]</field>
+            <field>[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:company_size:ok]</field>
+            <field>[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:employee_residence:nk]</field>
+            <field>[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:employment_type:nk]</field>
+            <field>[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:job_title:nk]</field>
+            <field>[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:work_year:qk]</field>
+            <field>[federated.1v0r29i1p88o6o0zuadzt1qojv78].[sum:salary:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{7C8D7211-A17E-4AA2-9A1A-149AC6055C9A}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:job_title:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:experience_level:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Sheet 3' />
+        <viewpoint name='Sheet 4'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.1v0r29i1p88o6o0zuadzt1qojv78].[none:company_size:ok]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{89437FDE-89C6-48E9-8FCC-D1747BE622FF}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAgAElEQVR4nO2d53ccWXqfn8rVOQKNSBIAwzDOMMyQO7NBK82sNtjSWrYk22vt8f/kD/5g
+      65OPbFm2ddYrayXtSnu0ceIOZ3Y4BAOInIFudA4V/QFhALJBZKDJvs85OOiurqr7Vnf96t73
+      hveVfN/3EQjaFBWgmF1C6EDQjqjA6s0vBCBoQ9TNb371YJ6PH82clC1ty9CZDCth86TN2JGu
+      cICSZeG12MNyKBEh32js69gtAvj40Qz/858+ORSjBLvny3cuMpWOnLQZO3KpI8ZCtYrjtZYA
+      Gr7PTLmyr2PlgxauKjIBQ3tme9DUkWXpoKcXAE6jjuc4OPUanuPs+Xi7WsH3vSOwbCuu1cC1
+      9vckPinUZhu/duMs+FAo19A1lUjIYCFbImBofPxwijtXBqjWLbKFCqGAQb5U5cpQD0srJRLR
+      IGe6UzycWKBSszB1latne/jfPxU1y044tSpT//x3BDq6UIwAeiSKJMtU5meQZJlw72l818Uq
+      FQh19VDPLRMbvMDSpx+SvnqT3MPPCHf1UV2aQzGDeI06vudhJtPUlubxHBs1EMIqFUicv4wk
+      7e8B5Xsej//hh3RefpXaSpZ4/wCFmUnMaAwkiUaxQLS3n/LCHIFECrtWxa5WSJ29gKIbh/yt
+      fcHjd39JMJ5g4pPf8MpXv45r2VSLeSKpNJWVHImePpYnxol1dVNcnCcYTzYXgOv6fPxwiq9e
+      P0skaCBJErNLBc6fzjAxv8KjqUWune0lHgkwMr3E126co27ZnO5KMDqbpWE5hAMGhqZiOy6L
+      K+Uju+iXCd/3kRQVu7r6fWUnnxDuPYUeiaEYJtn7n6AYJoF0J3Pv/xw9Gid6+iye61CZm6Yy
+      N41dLlFdnMOIxVGMAEYsQXHyCZ7toAaCNAr51Q4P3wNJ2betnutgVyuohsnYz35Cz83bZB/d
+      ByB+eojxX/wTZjROduQBgUQaSZKQNf1QvqftUFSNpdERoulOSkuLLI49IZLqoF4sYjcajH70
+      AVfe/iYPf/HPGKEQ8yOPmgtgdinPlcFuPhqe4GxfBwvZIpGQyZPpJcq1Bt2pKAvZInXLxtQ1
+      fjsyQzhgMJctUq1b5AoVNFUhaOqUqvWWc5paFUXTydx8Ey0UpjI3jR6JIWurzctgZxeKruNU
+      KwQz3RixBE6tiqQo6KEIvu8RyvRgJtJowRBmMo2kqKjmak3i2jZ6KEKjsEJ+ZBg4QPNUkoj3
+      D6CaJoG18nJPHhLKdCNJMuFMN1ooTKOYJxW5iOfYKIa57xpnt6ROneL09ZuUs8tU8iv0vHKZ
+      YCyO73kUFxfoODPIzP3P6Dp/AXwIp9JIvu/7heVF8H3+0w9/I5zgE+A4neDK/AyKYWImUns+
+      djsn2KnXKc5OkTgzhCQf2K3cM1851bkrJ9iu11meHCdz9jzymp1Na4DudJSh3g4+vD/Bm9cG
+      yBWrxMIBfn53hK9dP8t8rsjpriRz2SKpaIif3X0shhEOAadRZ/6DX5C69BqSoiArKk69hu+5
+      yJqGrGr4rotqBrBKBbRQBNdq7OlmDnX1HthO3/eZ+ehdQulOnEaDYCqNEY0x+/F7GJE4VqWM
+      rK7a33n51QOXt1sKi/Pk5+YIJRKUlpc4de06j371cyKpNIXFBaIdnZSWl0j1n0YPBIBtBFCt
+      20RDBl+9fpZ4JMDozDLL+TL9mTiXBrpIRIIMj89zabCbyfkchq5Rb9jHdqEvK77rYpdL5J88
+      QFYUPM/Dsy30aJxGbhnFMKgszKIFw1jFPEgyPV/6neO303OpF1ZwrQblhTm6Xr1JJNODVS4j
+      yQqSLOM2Gnjy3nusDsLM5/dwbItwMkW9VFp1fHv7ePL+u1z6+tt88rf/lyvvfJNyLkuytw/Y
+      RgCJSIBsocr4XJahvjS6prK4kqcrFeXjh1NUahbd6RgPJxaIhQLi5j8kZEVFj8XRw1H0SIxG
+      IUd5ZZlAqoNw7ylkTUcNhAhmeihPT2DEExixxInYGogn0UNhwp1d2NUKleVFzFgCLRTGtS0k
+      RUVbe8oeF5mz58hNT2FVK4QSCRqVMoX5OYbeuMPCyCNe+erXyU1PMfT6nY1jdu0DqIqMD7ju
+      0fcntxvb+QCl6XF81yV6eugErHqWbX0Aq4Gi6Ufu5G7Hdj6AXa+jmc8fYd+1x+K4nrj5jxjf
+      88je/wSnVqUw9gg23VDluWmqSwssfvoBteVFFj/9EN9rjd9D1Y0Tu/mfx043PxzCSLDgEJEk
+      7EoZWdOwKmUUzaCWXcSzbbL3PsYq5nEqFXKP7qFHYqt+gOBACAG0EJIkoZiB1akLto1VLiJJ
+      EpX5GWTdWH2vKGjBEJW5adRg+KRNfuFp6gQLTo6OqzcB6Lx+G1htFtnlEv1f+/2TNOulRdQA
+      LY4ky+jR2Emb8dIiBCBoa4QABG2NEICgrRECELQ1QgCCtkYIQNDWCAEI2hohAEFbIwQgaGuE
+      AARtjRCAoK0RAhC0NUIAgrZGCEDQ1ggBCNoaIQBBWyMEIGhrhAAEbY0QgKCtEQIQtDVCAIK2
+      RghA0NYIAQjaGiEAQVsjBCBoa4QABG2NEICgrRECELQ1QgCCtkYIQNDWCAEI2hohAEFbIwQg
+      aGuEAARtjRCAoK0RAhC0NUIAgrZGCEDQ1ggBCNoaIQBBWyMEIGhrhAAEbY26+Y0iS6iK0MRx
+      o8jSSZvQtmwRQP+Zbm7esU/Klral/3Qn48XySZvRlmwRwHS2wN2x+ZOypW0JhE3QRM17EjT9
+      1oOGRkc0yHrFrCoy0qZaOmRoJMOBZ45LhMyjsFEgODLUZhtvDfWwWKhwtjuJriiEAzrT2SKx
+      oMl7j6Z585V+Hs1mudiXptqwUWQZRZFYKlS5OdTNTK5EMhxgsVChNxmhUG2wVKwynS0e9/W9
+      EJiqws2e5LGVJ0sSvu/v+bi+aJBMxMT1vF2V4e29iKZsPHy3OV9fNERAU3a0x29ygqYCcDyP
+      pWKFMx0xYiETz/eRgFMdMR7OLAPg+T6qIhM0NAAMTUVLKlQth7NdSQKGRnciTLluEzR07k0u
+      7u5q2xBFhkT4+Mo7FQ0zV9m7z9Gghmnsbt/TsTAL1cqey2hGwjBwPI+66zT9PGcXkZreyV/Q
+      FQqzUHvWnqaHPZ7NkomF+em9cQYycRbyFWJBg49GZlmp1PlsYoFEOMCn4wu4nsetsz0YmsLw
+      9BLVho3vQ3cizEyuxEAmznS2iOPu/NQQCI6bpgJYKlZZKlYBeDiTBSBfqW98Pp+vMJ//Qk2/
+      Gp7CcT28TdVqsdYA4LMJ8eTfLY5t8fD99+k9f4F4Z+eO+0/cu8fpK1cOVObU8DA9586iqNrG
+      tuWZGcLxOGYoBECtVML3fYLR6J7P7/s+4/fucebKFaRNjmStXCY7N0dnfz+6ueo7zoyM0D0w
+      gKw0b874vs+Djz5CVTWGXr2GLMssz8yS7u3Zs13rNBVAbzLCldOdVOoWqqKQK9Uo1y3ylTpv
+      Xxvk/vQSfakoi4UKnbEQP/70yZabX7A/7IbFwugoiqLw4d/+DYlMFx2nTjH26Sd0DZ1lYXSU
+      YCxGKBZDUhRyM9Pk5ma5/s439lWe6ziMffZbGtUq048eke7ro1LIAxKKqhDvzDA/NkokmSQQ
+      DnP+9Tf2XEY5n+e3v/glnuczNzqKGQpRLRYJxWK4jkN2dpbFiUnSfX1kZ2fpOnPmueerlcuk
+      u3u4/977zI+PYzcszt24ztzoKF/+7h9uEdluaNoL1HBcppeLmJqKqaksFSqoskSx1mB8KU/D
+      dvB8n0TIZKlQQRODZ4eCJEHP+fNUi0V0wyTZ28vC2Bh2w6JRrVJeWQEgnEwiIRHv6iaS3L/z
+      PDf6hEAkytLUFOm+PlzHJjc7R6NawQgGKSwuEk2lwQdZ2aGRvQ1PPvmUM5cvM3L3Lq5j43se
+      jm2jaCrVYpHc3DxmKITnuiiatuP58otLLExOUlpZobSSJ9XTzczICKW172avSL7v+4XlRfB9
+      /vPPHvC/3nvIxb40pqZSsxwUWWJ8KU8yHCCgayTDJlPZIplYmIV8mUQ4IBzcA/LOzSG6zh1f
+      L9CpaGRHJ3jqwQOiqRSxjo59lXE6FtniBOcXl3BsCyMYpFIo7Pik38xOTvBu6N6LEzw8vfzM
+      tkp96wjxTLa0+j9X2rdRgq34vs/C2BjJnm5U3aBaLBKOxzc+t+p1XNtGVhSMYJBauUwgfLDu
+      o1q5jCRJFJaW6Dx9msLiIqphEI7H0U2TpclJ4pkMmrHL7p+ncGybudEx+s6fw/f9Z25+q17H
+      Wbsm85CuaS/sr14THAm1Uom5JyMoqkIpl0MzTMY+uYuiaVi1GnajQSASwQyF0QMmIx99xO98
+      7z9s6zTuhOe6vP83P+TC7TtMDQ+T7OnBqteZHB5GlmUqhTzRdAfLMzNc/NKX9lXGxP1hfN9j
+      8sEDrFoN3TQZuXsXVdOoV6s4lkUgHCEQDqMHAjz88AO+8f3v7/ua9opovLcQqq4TTiQY/vWv
+      CUSizI08ZnFinFJ2mczAAJIsIysKvu+xNDlJsqcHSd7/T5ibm8NuNChls0iSRKNaxfNcHNvG
+      dR0kWcF1HBR1/8/Jjr5eFicmWZyYJJbuYPrxCHOjYxSWs/QMDq5ek6rgex4L4+Oke3oPdE17
+      pakPIDhe1n0A13HIzsyQ7OmhWiwgywqNanXj6eg6Dla9jl2vrzZJJIlwPL7nG2azD2A3Gji2
+      Ta1UwqrXMUMhjGAQu17HDIep5PNEU6ldOaibWfcB6pUK5XyeSDJJrVxGURTq1RrByNo12Q5W
+      vYZVr6MZJpIE4UQCedM1HbsPIDgZFFWl8/RpgNXeF1ZvhnVUXccIBg+1TM0w0AzjmXb3+nu9
+      q+tA5zdDoY3xBCOwOn8sssnf13QdM3S417QXhABaCMe2+fwXP0c3TfILC9z69nf45B//ESMY
+      oFosomoaruMweP06Hf2nTtrcXeG6Ln/3X/+cwVdfZWV+npvvvM3dn/6UaCrN/Xff5ebbbzM7
+      Osq5G9fJrIn/OBE+QIsRCIcZuPYqqd5eJEkiGIuSnZmh78IFVubn6b94iUaletJm7pqHH35E
+      fW0MI93bg+/7hGJxqqUiX/6jf8WTTz/lzOVL1CuHM29or4gaoIVwLAvXcSgsLxOKx1kYGyOS
+      SDD42mvMPn7Ml/7oX7MwNsqZK1dP2tRdc+nObTKnT6GoKsXlLEvT06vXdO0aUw8f8OYf/gEz
+      IyMMXrt2IvYJAbQQZijExTffavrZ0PUbAITX/r9IpLq7AYg/Nah28fZtAM7fvHnsNq0jmkCC
+      tkYIQNDWCAEI2hohAEFbIwQgaGuEAARtjRCAoK0RAhC0NUIAgrZGCEDQ1ggBCNoaIQBBWyME
+      IGhrhAAEbY0QgKCtEQIQtDVCAIK2RghA0NYIAQjaGiEAQVsjBCBoa0RUiBZAliRihn5s5YU1
+      jZh+tOWFVI3oIZUR0nRc30Vz9v+8DqoqEe1Ze4QAWgBFlkgEjvan6AwGKTvraa4sOiO7j/WZ
+      NIOs1PcWjMuhQdxUSJpBcns8dqPMxvpxDgqgq9sLIKqb1Bwbx3Obfl736oT1L7LHJNauSQig
+      BfB8n4pj77zjAai7DrV9BpdtnMCxez1Od51VAfi7S8YYWju/8AFaCNd1efTxXRq12tbtjsvy
+      7OyWbZVCcV+5fl80fN/n4d1PyS4sbLwvFw4v37SoAVqIRrVKrVzm53/9A1LdXXieRySRoJjL
+      USuVuXj7dVYWFqkUi0yPPOGbf/a9fWdueVHwPI+VpWXy2Ry5+UVKhQKj94d57a03sRoNLt06
+      WKQ8UQO0GHPjE5y++Aqe5xGKxZgYfkA0mcRq1Bn7/D7Tj0eIp9N09vUeWxaVk6ZcKILvM/n4
+      CWPDD8n09TF6f5jRz4cPfG5RA7QQZijE7/7Jv0GWFZCgmMtx/vprFHM5zly6SLVUIhSLUSkU
+      yJw6BewtJeiLiCzLXHvzNpF4HMe2WL9m13HQDqHnbIsAZFlGFSlPjx1FXv1RJUlC1fXVn1iS
+      SGYyACTWkmavJ5jQd5FE+2VBkiQ6NxJhH34ijS0C6M0kePWVFyPxwstEb2Y1C0ytXOEn//1/
+      0NnfRyAUIhSLYdXrBKMRrFqdWCrF4vQ0ic4OcguLxNIpJEnm9CsXTvgKXly2CGAmV+ITkfP3
+      2MkkgrzSGQd8ookEvu/jOg6P735CZ3//ag6vcpn7H3zIja//Dg9/cxdJksjOznHrnbdP2vwX
+      mqY+gKbIREydXGV14KQnHqLhuGTL9Wa7bzkuETJZKlbZ3EGXCBqsVBuHZvTLim6a3Pjdr2OG
+      QyxNTZPs6iKWTiHLMkszs5x65QKP735C98AZFFUl1d1FIBw6abNfaJoK4NZAF7lyne54iKCu
+      0Z+KENQ1fju1hCxJFGsNOiIBKpaDoSroqsLYUoFU2CSoa/QlIxiqQr5apyMSZCpX4kJ3Estx
+      8Xyfmu2SCpnUbAfb9bjXJDF3O6JqGrF0CoC+c2e3fBbv6MB1XDRdJ9XV1TY9QEdNUwE8mM3y
+      +mA3tuvSsF2msiVMTcFQFfpTEWqWgyrLpMIBfjM+z1BnnPnCao4n3/eJmjrlukUmGsLzfbpj
+      ITRFBiQGOqLMrJTpjocp1hp8PL5wnNfb0jiWzae//CXJTIZiLsfVt97k83ffI93bw+hn94il
+      UhRzOdQ3Xt9wjAUHo6kAdFXh4VyOcsPG1BSKNQtNkZEkeDCXQ5ElOiNBinWLXKVO3XY3mj3n
+      MwnuTS9TdxyGOuJc6k3x0/uTOJ6H5XhM5YrYrsdcvkyhZrFSeX6zqp2QVYVgOEyqKwO+j11v
+      MDc+wcyTUa59+U3e+9Hf8+a//A65hUUhgEOiqQAWijtPXspvatM/XljZeH13kxN9fzbL5zPL
+      ON4XHkGpbgGwuIsy2o1auUy5UGBuYhLHsliYmqLv7BDRZJL58Qm+9J1vMTs6xqXbb5y0qS8N
+      TQUQDxq82t+BLEsslWp0RoJUGjbjywVunslQtRxChkauUica0PnJvQm8JvNSbHd3E5MEq4Si
+      UV7f1Kvj2DbqWob2dZ+ge2DgRGx7WWk66pWvNvCBTyeX6I6FMDUFU1NIRwJ8PpPlbCbOyEKe
+      dDjAUrG21r4XHDbrN7/g6Nh2KsRqr06A0aUCQX11t5rl0BUL8Td3n9CfjPDxxAKJoEnDaT4H
+      WyBodbYVwFSu1HT76FIB+MJPmFkpH4FZAsHxICbDtQmyJNMZ2N+gmaEodARCBFSVhrPzIhVT
+      Vamv7acrCpltyjVVlfo2i150RaFTDmEoKo0dFsaYiorrewRUBW+bJRLmU+fRFYXOQEgIoF3w
+      fJ9co7bzjs8hLQVZsXbuvUvudj/5+ftJQNwIsGI93+6kESTXeH55KaN5WcJ7FbQ1QgCCtkY0
+      gVoAVZbpDh3tpLa4YVCriVH3pxECaAEcz2OhWjnSMmTp5V89th9EE6jFsOr150Z7KGRzwOqk
+      Q8c+2lAq7YCoAVoI3/f5x7/8Ky7fuU29WsX3fOIdaWaePKF3aIj5iUlSXRkWp6ZxHYepR4/o
+      Hhwg1dVF95nTJ23+C4moAVqIYi6H7/s8+PAjyvkCvu9x79fvcebiRd7/+x/Td3aQ5dk58kuL
+      LExOEk0mmRh+QLXYfNBSsDOiBmghZFnhG9/7d1QKRYq5HJ7rcudbv8/s2Bjf/o9/xuTDR/QO
+      DVLO5xm61km9UqF7cIBoMnHSpr+wCAG0EJFEHIB4R5p4R3pj+/nrrwEwdO0qAJ39fcdv3EuK
+      EEAL4Xkev/jBD7nx9a/x+fsf8Prbv8fP/voHXLh5g9HP7hGKRqmUSlx64xap7u49n1+TD7aM
+      UpFevhbzy3dFLzCyLBOKRQnH43T29SErCudvXOf+Bx8ycOUy48PDnL12lcJyds/nloCAoh7o
+      T5VfvttF1AAtRs/AAPg+oWiUyQcPKRUKvPbVrzAz8oSvfPcPmXkyyqU3bu35vD5QtA8WmSOk
+      6aTMnQfsNFkmZYYIqhrVbaJeB1UNx3NJNzlfQNGouavHqZK8sY8sSWiSTOOpEOiaJNMfim8c
+      0+xcmiRvsX19uxBAi9EzuLriK3OqH8/zkNeeuh1r0dE6NqKkHT+255LfYWLaZqTnTIqTpM3x
+      /5/6zGj+mSrJBFSNUhMhJ7c5ZrtzrW9/+eq0lwj5JWxytBriGxa0NUIAgrZGCEDQ1ggBCNoa
+      IQBBWyO6QQW7RpMVksbuk1S8CGsQhAAEu2av4wCnwvFtBRPVjG0TPEW05on/FEnGUNSmUzq2
+      O2an7UIAbYIsSaTMg6UYCqr6ngRQdaxtB7vWtzcdwJJ4ZgAtYQRZbpSf2bZ+7IpVJahquL6/
+      NYzKNuearKzGsxUCaAFUWSYTPNo1wWFNZ65WONA5JHNv+78IWYyFAFoAsSb45BC9QC2E7/s0
+      ajU8b3dRtfNLIrPOQRE1QAtRK5f55Q//38ZU6EgyQTAcZn5igs7+PhYmpwhFo+iGQSGXY3Fq
+      mv7z57hw4/pJm/7CIgTQYlSKRax6naXZWYauXmFhYpJiLkejWmNpZpZgNEyqq5vBq5dpVGs0
+      agcLd3iUhFV9x1Te8gkn+xYCaCF00+T3/vSPsRsNOvp60U2TdE8PuYUFEp0dxDs6iHemiaXT
+      TD54yNC1qyjq8SXLUySZoLr7nAVVx9oxZudexhWOAiGAFkLVNKLJJMCWJY+xVApV1+jo7d3Y
+      du61V4/dPh//uTGLnt1/Z1RZfqZfX5P2t02TFWTf35KtaKfjhABaiHqlwq9/9PdceuN1fN9H
+      03UqhQJmKIRtNdANE8e2CcdjLM/NE0+nadRqxxYTyPP9bcOZNyOk6Tvuo8oy+lMpXyuORYcZ
+      prBpzEGVFfRNN3JMD1CwahvbwppB3bXxfR9dVojqJiW7QcWx0GVlY/+nz79FAKcycV6/ICIO
+      HDenM6vRIDzPo1GtMvnwEbpp4Fg2vu8RCIcp5nJousHi9DTBcJhapYJjWXzlu39wwtYfjLrr
+      UHGsZ7brirpl+07vZUmm6li4/moPmi4rlDetHNvu+C0CmMxX+EgkrT52UjGTi8kwqq6T6u4i
+      0dlBJBGnsJxl7PP7nLv+2kYzKBSL0tHTw8zoKImODoKRyK7KkNh+WsBuMZSXr8FwqFekqzKW
+      IzJD7hfdMHjjG+9svHdsh9e+9hW6Tn/RxOk+cwaAjr7epw9/Lj5g7aH50gzX21vSvpC6cxOo
+      JXuB7pzJoMoy2UodXZUJGxrL5Tq6qvD5XBZTU/nutQF+9PkE/YkIUyslemIhIobOyHIBXZFJ
+      hkzOdsT48fAkNVsk0dsNnufxyc9/wfnXXmX03udcefNLPPr4LpIkMT78kIHLF5kYfsil228Q
+      iu7uyb8Z2zvY77DevNgtlV30Ap0KJ/CauMumfDy1TdORYEmS+GBigd54iMF0jEwkiOf7XOpK
+      kAyZvDXYTdTUudHfgSzB9b4OXj+dAeBqT4rznXEy4QCFWkPc/HtAlmU812Xq8Qi+D41aDVXT
+      KGZzSMCDjz6m/9xZ5sfHT9rUQ6PsNFhpVJ/5q3sHq612S1OZLZVqXO/r4N5cjsFUlMVyjYih
+      MZUvU7dcRpcL/PThNDf6O5haKa9Vrx6FukXIUPl0NsdAKkqx1iCgKUIEeyAci5Hu6WH8/jCF
+      pWUatRqBUBhZVcj09zE+/IBLt18/EdvUY1wPYDxVlirJJI3gF/F8nnqvSDIx3diIQ6RKMr3B
+      2EasoMim6dcBRcP2XJJGsLkARpYLjCyvzhycLz5bhZWXV0/64eQiALnqqrctARXLJlupk62I
+      bCT74ZVbNwFI93RTKRbpWuviHOTySZoFgOO55O3djzynDjDIZXlu86nUT0+f3vQ+8dRnT7/f
+      eL1pe1MB9MRC9CfCLJaqhA0dy3Ep1C0KtQavn84wmStxJhVltlAhHTJ5d2wen1VHa0rkDT40
+      QtHoSZvw0tNUALlKnf5EmJrt0p8weLSYJ2JoLJVrmKrCuc4449kir2QSTOfLGKpCXWSLFzzF
+      bgbCott0zZqKhtokGO9h9xo1FcCVnhSW45IIGBTrFg3HJaApnE5GqNkOuWqD3niI8VyRsKHT
+      EDe/oAkVe+deICSaNnU0M0ygybyjww7Q21QAH6217TdTbtjgw+hy8VANEAia4fhe0xigAVUn
+      scm3CCgaqhnG8b0tr2HrwN92r3fd2Wq7YoDrqJAliah+sFHanQioKtWXoKK2n3KOV/jC2d38
+      euPzHV6/fGPbLyxHu4JWliTSB1wUHzVMZHn3bfCDdIPKkoTRZDCsmV9wEIQAWgDfZ0+zLPdD
+      w3UoOQdcPCNxaGFR1nmeE1yTn433L0vSM5lqDuIWCwG0GLmFReIdacr5PIqqMTY8zMVbN1E2
+      TRkuZLPEUqkTtHJ3HMQJllhdUPM0IVV/Zo5RSDM26s/dtPv35QMIjh7f93nvH37MwKVLlPJ5
+      kplOHMvmt796l0a1RjAaobC8TM/AGe5/+BuMgImEhG4alAtFPM8jmenkwlpSvZcRx/co2lsH
+      WRVZ3hBRxW6gycrG1OeVRnU1DlB5ZWscobXtIipEC7E4PYOiqkw8eLjaLmJ1gpxVrxNLJyks
+      L+M6DtmFBRRFRlFURj67R7lQZOz+MJViia5T/Sd8FYeDLiskjOAzf6aytxmpOyFqgBYi0dnB
+      O//2T3AsC5/VyXHF3AqhaBRFVdB0nanHT7h65w6yIiPJMmevXUVWZC7euoGmGxiBPUavOmE0
+      Sd6y0msdx/eaNo06A5Et3aCwtUmjyQqVPeRCEwJoITRdx3UcNMPAsW00XScSj6OoCo5tM3D5
+      EqfOn0MzDKS1HhbdWP3xA6GjjSy3HyRJ2rEnSGmyJhi2H/F9uht0nfVtuqyQMsPoioqpqGQC
+      EWRJ2va/EEAL4fs+//RX/4cLN15j4uEj3vrOt/jBf/lzvvIH/4If/8Vfcudb32BxaprBK5fp
+      XUumd5zsNTr0aibI549vNLZZEnmQ1WdFq7ZxzvV2/3b/hQBaCFmWSWY6SWY6ebTGSH8AAAUw
+      SURBVPTJb/F9n29//3sMf/gbvvX97/H+j3/ClTu3sRoHS3e6X/acJRIoWM+fFZzcZmxi3Qd4
+      mmbLOp9uAimSjL4moGbNq80IAbQYQ1evoJsml964xfTIE6xGg1du3WDy0Qhv/+kfM/V4hKGr
+      V/Z8XlmSDjQ9GfYeHfogbDsdmubdppubQJt7gboCURJGEF1W6ApGUSUZGYmQthq0SwigxUhm
+      OgHoGxrcsv3yWnLs8/uMB+T5PtnGwQfCDpuw2ryJ1GwUeDsCigZr4n66BvDxt6wXKLsuDc/B
+      wycvmkCCk2Z9SeTTbOdraE2aRpsd4+1qAFidRmGzdUKUEIDgyNjNeoDtenu28wEUSWaxUdqy
+      rScYI64HgC9qgPWepc01QE8whqxJBNE3hCIEIDgydjMVYjsneDsfoJko6q69EfVNX0uhtD4W
+      0BX8ogawPZelenljMC2gakIArYAqS3QGjrYfP6IbB54MdxRJ8vbqAyiS9MxosIS0MRfI91fj
+      l66/r7vOlhogYQQxZJW6a2PIqhBAK+D4PtnGEWeIOYRJL3vtBt1Nr9N2PkDKCKE1MVpuMh06
+      oGokaO4Eb+4i9Xyfsl3HUTQUSaZo14QABK2JIkkYTeb9SKw2eTZT2ZSM72knGL7oIs0EIhiK
+      hi6vNpPESHCLYTcafPzzX5Hu7mLw8kXqlSr1Wo1ERxqAmbHxtYwxk1y8deOErd2ZgzjBju9t
+      CW67TkDRiOlb5zs9byBs82eGomJ5Lpqs4Pkenu8LAbQSlmURiqxGgn7vH35CaSVPJBFnfnKK
+      2+/8HiuLi9x7931K+QKqpjHy2T183yeWSuE6DrZlYZgmlWKR5fkFQtEIr335Tc68cgHlBAbC
+      Kvb2aVLX6d8mNOJ2PoDre5SsrcJQJHlXNcD6a1PRkCWJhusIAbQSsiQzPTpGpq+XUr5AOB7H
+      sR1AolqpoOkGl2+/Tn45y8LUNLIskznVj6IoTD4eQdN1JElCkmU6e3uIJhMbc4Zc32floKO4
+      RzAQtp0P0NVk1ieAoWh4bN1fkWTMtSe+JiuENbNpDbD+el1cliIE0FIEwiG++e//dMf9nh4l
+      Brj6pdvYlsW99z7g3KtX6dxj9OjdcBS9QNuxXTdo0gg+sy5YliSkNXXKkkTFbmysJpORNs4T
+      aOJTCAG0EL7vszQzS6IjzeLMLD0DZ5h+spoHYGFqmt7BAaZHnjB4+SKy8uwkL03Xuf7VLx+Z
+      fXvtBUofQf4vRZKfiRfk+t5GDFDX94jrAdY7QoOqvtHEWh8xNhUNCUQTqNXwfZ/P3vuAt779
+      +6wsLpHu7iK3sMjwWlToH/23v+DqnduMP3jE4OWLJ23ujgRVHX+HaBdhVcdtkhd5u1mczeIF
+      RTRzo7mkyQoSbNQIDa/5OICPj+W5QgCthCzLhOMxHNumXl3tAaoUSxiBAPmlZcLRKCuLS/QO
+      Hf9agP2w2j35/BpDlmQqzrO9PaGnAmBt3v50og9r002uywrGpnRIIc34Yi6QLLM+FWi90SQE
+      0GJc/8pbyLLMxddvUszmePWtOxiBILVKmWAkQrVYIhyPnbSZh4aHj9sk8+TmJ/dmZKRnEn0k
+      lOCWGsB2XTRptQbxfI+qvdUfMBVtY+6QEECLsb7EUdU0Qpvyf0Xiq4n0Ion4idjVKnhrTZfN
+      PD0QFtFMlLVRZFmSNl6vjxhv7mLdmiUyEebWqc4jvQDBswwmo3QcMGrbTsR1E20PUd2aEdXN
+      PfXs7CYp33aBsbY7drcrwtYdX22tSQSbe6V81vt0/z/tZC0pTgvX8gAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 4' width='192'>
+      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
+      5uvpcEzMTAQAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
